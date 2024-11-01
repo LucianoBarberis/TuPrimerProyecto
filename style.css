@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #E9F0E8;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2E1F4C;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #E9F0E8;
+    /* creates padding around scroll thumb */
+}
+
+body {
+    font-family: "Poppins";
+    background-color: #E9F0E8;
+}
+
+h1 {
+    font-family: "Azeret Mono";
+    color: #E9F0E8;
+    font-weight: 500;
+    font-size: 46px;
+    margin-right: 700px;
+}
+
+header {
+    height: 200px;
+    background-color: #2E1F4C;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 200px;
+    background-color: #2E1F4C;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    color: #E9F0E8;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+main {
+    margin: 90px 120px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #E9F0E8;
+}
+
+.textFooter {
+    text-align: center;
+    color: #E9F0E8;
+    font-weight: 500;
+}
+
+.no-margin {
+    margin-top: 0px;
+}
+
+.card {
+    width: 910px;
+    height: 580px;
+    background-color: #F8FBFE;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card__content {
+    padding: 40px;
+    font-size: 25px;
+}
+
+.tools {
+    display: flex;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.button.x {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(86, 98, 246, 0.25);
+    gap: 0.75rem;
+    color: #ffffff;
+    background-color: #5662f6;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+    height: 50px;
+    margin: 0 auto;
+    scale: 1.4;
+    border-radius: 50px;
+    font-family: "Poppins";
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button.x svg {
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+    margin-right: 0.5rem;
+}
+
+.button.x:hover {
+    transform: scale(1.02);
+    background-color: rgb(119, 133, 204);
+    box-shadow: 0 2px 4px rgba(119, 133, 204, 0.1);
+}
+
+.button.x:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.button.x:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .button.x {
+        max-width: 100%;
+    }
+}
